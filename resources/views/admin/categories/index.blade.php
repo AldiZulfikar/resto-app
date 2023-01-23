@@ -17,16 +17,13 @@
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
                             <th scope="col" class="px-6 py-3">
-                                Product name
+                                Name
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Color
+                                Image
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Category
-                            </th>
-                            <th scope="col" class="px-6 py-3">
-                                Price
+                                Description
                             </th>
                             <th scope="col" class="px-6 py-3">
                                 Action
@@ -34,74 +31,33 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach ($categories as $item)
                         <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
                             <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                Apple MacBook Pro 17"
+                                {{$item->name}}
                             </th>
                             <td class="px-6 py-4">
-                                Sliver
+                                <img src="{{Storage::url($item->image)}}" alt="" class="w-16 h-16 rounded">
                             </td>
                             <td class="px-6 py-4">
-                                Laptop
+                                {{$item->description}}
                             </td>
                             <td class="px-6 py-4">
-                                $2999
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                <div class="flex space-x-2">
+                                    <a href="{{route('admin.categories.edit', $item->id)}}" class="font-medium text-white dark:text-gray-900 px-2 py-1 bg-white hover:bg-gray-600 hover:text-white rounded-lg">Edit</a>
+                                    <form action="{{route('admin.categories.destroy', $item->id)}}" 
+                                        method="POST" 
+                                        class="font-medium text-white dark:text-gray-900 px-2 py-1 bg-white hover:bg-gray-600 hover:text-white rounded-lg"
+                                        onsubmit="return confirm('Are you sure?')"
+                                        >
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit">Delete</button>
+                                    </form>
+                                </div>
                             </td>
                         </tr>
-                        <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                Microsoft Surface Pro
-                            </th>
-                            <td class="px-6 py-4">
-                                White
-                            </td>
-                            <td class="px-6 py-4">
-                                Laptop PC
-                            </td>
-                            <td class="px-6 py-4">
-                                $1999
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                            </td>
-                        </tr>
-                        <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                Magic Mouse 2
-                            </th>
-                            <td class="px-6 py-4">
-                                Black
-                            </td>
-                            <td class="px-6 py-4">
-                                Accessories
-                            </td>
-                            <td class="px-6 py-4">
-                                $99
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                            </td>
-                        </tr>
-                        <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                Google Pixel Phone
-                            </th>
-                            <td class="px-6 py-4">
-                                Gray
-                            </td>
-                            <td class="px-6 py-4">
-                                Phone
-                            </td>
-                            <td class="px-6 py-4">
-                                $799
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                            </td>
-                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
