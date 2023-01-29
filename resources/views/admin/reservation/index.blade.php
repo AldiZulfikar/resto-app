@@ -55,7 +55,7 @@
                                 {{$item->res_date}}
                             </td>
                             <td class="px-6 py-4">
-                                {{$item->table_id}}
+                                {{$item->table->name}}
                             </td>
                             <td class="px-6 py-4">
                                 {{$item->guest_number}}
