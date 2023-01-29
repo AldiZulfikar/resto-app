@@ -8,29 +8,31 @@
     <div class="py-12">
         
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">  
-                <form method="POST" action="{{route('admin.menus.store')}}" enctype="multipart/form-data">
+                <form method="POST" action="{{route('admin.menus.update', $menu->id)}}" enctype="multipart/form-data">
                 @csrf
+                @method('PUT')
                     <div class="mb-6">
                         <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
-                        <input name="name" type="text" id="base-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <input name="name" value="{{$menu->name}}" type="text" id="base-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                     </div>
                     <div class="mb-6">                    
                         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="user_avatar">Image</label>
+                        <img src="{{Storage::url($menu->image)}}" class="w-20 h-20 rounded mb-2" alt="">
                         <input name="image" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 p-2.5 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="user_avatar_help" id="user_avatar" type="file">
                     </div>
                     <div class="mb-6">                    
                         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="user_avatar">Price</label>
-                        <input name="price" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 p-2.5 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="user_avatar_help" id="user_avatar" type="number">
+                        <input name="price" value="{{$menu->price}}" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 p-2.5 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="user_avatar_help" id="user_avatar" type="number">
                     </div>
                     <div class="mb-6">
                         <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
-                        <textarea name="description" id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                        <textarea name="description" id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">{{$menu->description}}</textarea>
                     </div>
                     <div class="mb-6">
                         <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
                         <select name="categories[]" multiple type="text" id="base-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             @foreach ($categories as $category)
-                                <option value="{{$category->id}}">{{$category->name}}</option>
+                                <option value="{{$category->id}}" @selected($menu->categories->contains($category))>{{$category->name}}</option>
                             @endforeach
                         </select>
                     </div>
