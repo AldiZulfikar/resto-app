@@ -63,6 +63,15 @@
                             <td class="px-6 py-4">
                                 <div class="flex space-x-2">
                                     <a href="{{route('admin.reservation.edit', $item->id)}}" class="font-medium text-white dark:text-gray-900 px-2 py-1 bg-white hover:bg-gray-600 hover:text-white rounded-lg">Edit</a>
+                                    <form action="{{route('admin.reservation.destroy', $item->id)}}" 
+                                        method="POST" 
+                                        class="font-medium text-white dark:text-gray-900 px-2 py-1 bg-white hover:bg-gray-600 hover:text-white rounded-lg"
+                                        onsubmit="return confirm('Are you sure?')"
+                                        >
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit">Delete</button>
+                                    </form>
                                 </div>
                             </td>
                         </tr>

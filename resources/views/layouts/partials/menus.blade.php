@@ -11,7 +11,7 @@
       @foreach ($menu as $item)
       <div class="col-lg-4 col-md-6">
         <div class="member">
-          <div class="pic"><img src="{{asset('/frontend-assets')}}/assets/img/chefs/chefs-3.jpg" class="img-fluid" alt=""></div>
+          <div class="pic"><img src="{{Storage::url($item->image)}}" class="img-fluid" alt=""></div>
           <div class="member-info">
             <h4>{{$item->name}}</h4>
             <div class="menu-content">

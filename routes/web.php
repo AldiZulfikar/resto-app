@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontendController::class, 'index']);
 Route::get('/menus', [FrontendMenuController::class, 'index'])->name('menu.index');
-Route::get('/menus/{menu}', [MenuController::class, 'show'])->name('menu.show');
+Route::get('/menus/{menu}', [FrontendMenuController::class, 'show'])->name('menu.show');
 Route::get('/reservation/step-one', [FrontendReservationController::class, 'stepOne'])->name('reservations.step.one');
 Route::get('/reservation/step-two', [FrontendReservationController::class, 'stepTwo'])->name('reservations.step.two');
 

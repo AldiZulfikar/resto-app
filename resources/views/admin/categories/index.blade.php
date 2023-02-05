@@ -20,9 +20,6 @@
                                 Name
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Image
-                            </th>
-                            <th scope="col" class="px-6 py-3">
                                 Description
                             </th>
                             <th scope="col" class="px-6 py-3">
@@ -36,9 +33,6 @@
                             <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                 {{$item->name}}
                             </th>
-                            <td class="px-6 py-4">
-                                <img src="{{Storage::url($item->image)}}" alt="" class="w-16 h-16 rounded">
-                            </td>
                             <td class="px-6 py-4">
                                 {{$item->description}}
                             </td>

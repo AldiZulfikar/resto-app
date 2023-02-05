@@ -13,4 +13,9 @@ class FrontendMenuController extends Controller
         $menu = Menu::all();
         return view('pages.menus', compact('menu'));
     }
+
+    public function show(Menu $menu)
+    {
+        return view('pages.menu-detail', compact('menu'));
+    }
 }
