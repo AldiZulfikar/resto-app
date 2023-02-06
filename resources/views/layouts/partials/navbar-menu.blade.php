@@ -2,7 +2,7 @@
 <section id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
       <i class="bi bi-phone d-flex align-items-center"><span>+62 878 8947 2337</span></i>
-      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 17:00 AM - 23:00 PM</span></i>
+      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sun: 17:00 AM - 23:00 PM</span></i>
     </div>
   </section>
 
@@ -17,11 +17,11 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-          <li><a class="nav-link scrollto" href="#events">Events</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="/#about">About</a></li>
+          <li><a class="nav-link scrollto" href="/#menu">Menu</a></li>
+          <li><a class="nav-link scrollto" href="/#events">Events</a></li>
+          <li><a class="nav-link scrollto" href="/#gallery">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

@@ -3,13 +3,13 @@
   <div class="container mt-5">
 
     <div class="section-title">
-      <h2>Our Proffesional <span>Chefs</span></h2>
+      <h2>Our Delicious <span>Menus</span></h2>
       <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
     </div>
 
     <div class="row">
       @foreach ($menu as $item)
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 mb-5">
         <div class="member">
           <div class="pic"><img src="{{Storage::url($item->image)}}" class="img-fluid" alt=""></div>
           <div class="member-info">

@@ -30,7 +30,9 @@
                 </div>
               @endforeach
             @endforeach
-  
+          </div>
+          <div class="d-flex justify-content-center mt-3">
+            <a href="{{route('menu.index')}}" class="book-a-table-btn animate__animated animate__fadeInUp scrollto">All Menus</a>
           </div>
   
         </div>

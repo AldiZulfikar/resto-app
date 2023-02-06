@@ -8,6 +8,7 @@
     <div class="py-12">
         
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <h1 class="text-white dark:text-white text-3xl mb-5">Add New Category</h1> 
                 <form method="POST" action="{{route('admin.categories.store')}}" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-6">

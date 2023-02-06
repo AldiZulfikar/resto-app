@@ -16,10 +16,10 @@
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown"><span>Mamyuk</span> Restaurant</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <p class="animate__animated animate__fadeInUp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt cupiditate veritatis magni officia perspiciatis illo atque. Rerum facere repellat soluta delectus? Fugit nisi cumque odit provident molestias alias aspernatur perspiciatis!</p>
                 <div>
                   <a href="{{route('menu.index')}}" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                  <a href="{{route('reservations.step.one')}}" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
                 </div>
               </div>
             </div>
@@ -29,11 +29,11 @@
           <div class="carousel-item" style="background-image: url({{asset('/frontend-assets')}}/assets/img/slide/slide-2.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <h2 class="animate__animated animate__fadeInDown">Weekdays seru!</h2>
+                <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti nihil eos nesciunt. Perferendis repudiandae dolore laborum asperiores velit, similique fugiat optio minima ab reiciendis sint maiores esse at totam eum!</p>
                 <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                  <a href="{{route('menu.index')}}" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <a href="{{route('reservations.step.one')}}" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
                 </div>
               </div>
             </div>
@@ -43,11 +43,11 @@
           <div class="carousel-item" style="background-image: url({{asset('/frontend-assets')}}/assets/img/slide/slide-3.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <h2 class="animate__animated animate__fadeInDown">Kelezatan yang Terjamin!</h2>
+                <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti nihil eos nesciunt. Perferendis repudiandae dolore laborum asperiores velit, similique fugiat optio minima ab reiciendis sint maiores esse at totam eum!</p>
                 <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                  <a href="{{route('menu.index')}}" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <a href="{{route('reservations.step.one')}}" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
                 </div>
               </div>
             </div>

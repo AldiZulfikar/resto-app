@@ -17,7 +17,7 @@
                   <div class="col-lg-6 pt-4 pt-lg-0 content">
                     <h3>Birthday Parties</h3>
                     <div class="price">
-                      <p><span>$189</span></p>
+                      <p><span>IDR 2.890.000</span></p>
                     </div>
                     <p class="fst-italic">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -44,7 +44,7 @@
                   <div class="col-lg-6 pt-4 pt-lg-0 content">
                     <h3>Private Parties</h3>
                     <div class="price">
-                      <p><span>$290</span></p>
+                      <p><span>IDR 3.999.000</span></p>
                     </div>
                     <p class="fst-italic">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -71,7 +71,7 @@
                   <div class="col-lg-6 pt-4 pt-lg-0 content">
                     <h3>Custom Parties</h3>
                     <div class="price">
-                      <p><span>$99</span></p>
+                      <p><span>IDR 5.999.999</span></p>
                     </div>
                     <p class="fst-italic">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore

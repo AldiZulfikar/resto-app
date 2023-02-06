@@ -7,6 +7,7 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8"> 
+            <h1 class="text-white dark:text-white text-3xl">List of Categories</h1> 
             <div class="flex justify-end mb-2 pb-2">
                 <a href="{{route('admin.categories.create')}}" class="text-white dark:text-white px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg">
                     New Category

@@ -7,7 +7,7 @@
     </div>
     <div class="row event-item">
         <div class="col-lg-6">
-          <img src="{{Storage::url($menu->image)}}" class="img-fluid" alt="">
+          <img src="{{Storage::url($menu->image)}}" class="img-fluid" style="width: 30rem; height:30rem;" alt="">
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0 content">
           <h3>{{$menu->name}}</h3>

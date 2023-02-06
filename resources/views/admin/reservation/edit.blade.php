@@ -8,6 +8,7 @@
     <div class="py-12">
         
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">  
+            <h1 class="text-white dark:text-white text-3xl mb-5">Edit Reservation</h1>
                 <form method="POST" action="{{route('admin.reservation.update', $reservation->id)}}">
                     @csrf
                     @method('PUT')
